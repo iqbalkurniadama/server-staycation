@@ -10,7 +10,7 @@ const flash = require('connect-flash');
 const methodOverride = require('method-override');
 // import mongoose
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/db_staycation');
+mongoose.connect('mongodb+srv://juki:juki123456@cluster0.yvubd.mongodb.net/db_staycation?retryWrites=true&w=majority');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
